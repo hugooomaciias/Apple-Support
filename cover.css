@@ -1,0 +1,141 @@
+/* Body */
+
+.cover-container {
+  max-width: 115em;
+  padding-bottom: 0px;
+}
+
+body {
+  background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-color: #f8f9fa;
+  color: #212529;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+#fondoBody{
+  background-image: url('Imagenes/Fondos/Fondo.jpg');
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Main */
+
+.main{
+  height: 850px;
+  align-content: center;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Cabecera */
+
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, .5);
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active{
+  color: black;
+  border-bottom-color: black;
+}
+
+.nav-masthead .nav-link:hover {
+  color: white;
+  border-bottom-color: black;
+}
+
+/* Dropdown */
+
+.dropdown-menu{
+  width: auto;
+  min-width: 110px;
+  border-radius: 7px;
+}
+
+.dropdown-item{
+  text-align: center;
+  width: 100px;
+  color: black;
+  font-weight: 500;
+}
+
+.dropdown-item:active {
+  background-color: white;
+  color: #000;
+}
+
+.dropdown-item:hover{
+  background-color: black;
+  color: white;
+}
+
+/* Logo */
+
+.logo{
+  height: 30px;
+  padding-bottom: 5px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Modal */
+
+@keyframes customFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal.custom-fade.show .modal-dialog {
+  animation: customFadeIn 0.7s ease-out forwards;
+}
+
+/* Botón Modal */
+
+#btnPrincipal{
+  background: white;
+  border: 3px solid black;
+  font-weight: 550;
+  color: black;
+}
+
+#btnPrincipal:hover{
+  background: black;
+  color: white;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Dispositivos moviles */
+/* Ajustar tamaños de fuente en dispositivos pequeños */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .btn-lg {
+    padding: 0.75rem 1.25rem;
+  }
+}

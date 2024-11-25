@@ -1,0 +1,205 @@
+/*Sección*/
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    font-weight: 500;
+}
+
+.bg-image {
+    background-image: url('Imagenes/Cabeceras/Cabecera.webp');
+    background-size: 100%;
+    background-position-y: -325px;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.tituloEspaciado{
+    letter-spacing: 7px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Módulos Dispositivos */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "card1 card2 card3"
+        ". card4 card5";
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.fondoTransp{
+    position: relative;
+    width: 100%;
+    height: 225px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.fondoTransp:hover{
+    background-color: black;
+    opacity: 60%;
+    transition: 0.4s;
+}
+
+#iphone16Pro:hover:after {
+    content: "iPhone 16 Pro";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 10px 10px 20px black;
+}
+
+#iphone16:hover:after {
+    content: "iPhone 16";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 10px 10px 20px black;
+}
+
+#iphone15:hover:after {
+    content: "iPhone 15";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 10px 10px 20px black;
+}
+
+#iphone14:hover:after {
+    content: "iPhone 14";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 10px 10px 20px black;
+}
+
+#iphoneSE:hover:after {
+    content: "iPhone SE";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 10px 10px 20px black;
+}
+
+.modulosInferiores {
+    justify-content: center;      /* Centra los elementos horizontalmente */
+    align-items: center;          /* Centra los elementos verticalmente */
+  }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Botones dispositivos*/
+
+#botonVerProducto{
+    width: 140px;
+    background: white;
+    border-color: black;
+    font-weight: 550;
+    color: black;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+#botonVerProducto::after{
+    content: "➜";
+    position: absolute;
+    opacity: 0;
+    top: 6px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#botonVerProducto:hover{
+    background: black;
+    color: white;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+#botonVerProducto:hover:after{
+    opacity: 1;
+    right: 10px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Modales*/
+
+.custom-size{
+    max-width: 800px;
+    height: 500px;
+}
+
+.custom-size .modal-content{
+    height: 100%;
+    overflow-y: auto;
+}
+
+#tituloEspaciado2{
+    letter-spacing: 2px;
+}
+
+.botonColor{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botonColor:hover{
+    transform: scale(1.2);
+    box-shadow: 0 3px 8px black;
+}
+
+.botonColor.seleccionado{
+    transform: scale(1.2);
+}
+
+.imagenModal{
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.parrafo{
+    font-size: 20px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Footer */
+.contenedorFooter{
+    max-width: 115em;
+}
